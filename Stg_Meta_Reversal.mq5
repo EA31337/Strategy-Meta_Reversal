@@ -65,10 +65,6 @@ int OnInit() {
   EAParams ea_params(__FILE__, Log_Level);
   ea = new EA(ea_params);
   _result &= ea.StrategyAdd<Stg_Meta_Reversal>(Active_Tfs);
-  for (DictStructIterator<long, Ref<Strategy>> iter = ea.GetStrategies().Begin(); iter.IsValid(); ++iter) {
-    Stg_Meta_Reversal *_strat = iter.Value().Ptr();
-    _strat.SetStrategies(ea);
-  }
   return (_result ? INIT_SUCCEEDED : INIT_FAILED);
 }
 
