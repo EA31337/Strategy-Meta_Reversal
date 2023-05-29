@@ -9,7 +9,7 @@
 
 // User input params.
 INPUT2_GROUP("Meta Reversal strategy: main params");
-INPUT2 ENUM_STRATEGY Meta_Reversal_Strategy = STRAT_ALLIGATOR;  // Strategy to reverse signals
+INPUT2 ENUM_STRATEGY Meta_Reversal_Strategy = STRAT_RSI;  // Strategy to reverse signals
 INPUT2_GROUP("Meta Reversal strategy: common params");
 INPUT2 float Meta_Reversal_LotSize = 0;                // Lot size
 INPUT2 int Meta_Reversal_SignalOpenMethod = 0;         // Signal open method
@@ -25,9 +25,9 @@ INPUT2 float Meta_Reversal_PriceStopLevel = 2;         // Price limit level
 INPUT2 int Meta_Reversal_TickFilterMethod = 32;        // Tick filter method (0-255)
 INPUT2 float Meta_Reversal_MaxSpread = 4.0;            // Max spread to trade (in pips)
 INPUT2 short Meta_Reversal_Shift = 0;                  // Shift
-INPUT2 float Meta_Reversal_OrderCloseLoss = 80;        // Order close loss
-INPUT2 float Meta_Reversal_OrderCloseProfit = 80;      // Order close profit
-INPUT2 int Meta_Reversal_OrderCloseTime = -30;         // Order close time in mins (>0) or bars (<0)
+INPUT2 float Meta_Reversal_OrderCloseLoss = 30;        // Order close loss
+INPUT2 float Meta_Reversal_OrderCloseProfit = 30;      // Order close profit
+INPUT2 int Meta_Reversal_OrderCloseTime = -10;         // Order close time in mins (>0) or bars (<0)
 
 // Structs.
 
