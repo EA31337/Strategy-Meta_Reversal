@@ -6,8 +6,8 @@
 
 /**
  * @file
- * Implements Multi meta strategy.
+ * Implements Reversal meta strategy.
  */
 
 // Includes the main code.
-#include "Stg_Meta_Multi.mq5"
+#include "Stg_Meta_Reversal.mq5"

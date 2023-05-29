@@ -1,6 +1,6 @@
 /**
  * @file
- * Implements Multi meta strategy.
+ * Implements Reversal meta strategy.
  */
 
 // Includes conditional compilation directives.
@@ -32,13 +32,13 @@ input ENUM_LOG_LEVEL Log_Level = V_INFO;  // Log level.
 input bool Info_On_Chart = true;          // Display info on chart.
 
 // Includes strategy class.
-#include "Stg_Meta_Multi.mqh"
+#include "Stg_Meta_Reversal.mqh"
 
 // Defines.
-#define ea_name "Strategy Meta_Multi"
+#define ea_name "Strategy Meta_Reversal"
 #define ea_version "2.000"
 #define ea_desc "Strategy based on EA31337 framework."
-#define ea_link "https://github.com/EA31337/Strategy-Meta_Multi"
+#define ea_link "https://github.com/EA31337/Strategy-Meta_Reversal"
 #define ea_author "EA31337 Ltd"
 
 // Properties.
@@ -64,9 +64,9 @@ int OnInit() {
   bool _result = true;
   EAParams ea_params(__FILE__, Log_Level);
   ea = new EA(ea_params);
-  _result &= ea.StrategyAdd<Stg_Meta_Multi>(Active_Tfs);
+  _result &= ea.StrategyAdd<Stg_Meta_Reversal>(Active_Tfs);
   for (DictStructIterator<long, Ref<Strategy>> iter = ea.GetStrategies().Begin(); iter.IsValid(); ++iter) {
-    Stg_Meta_Multi *_strat = iter.Value().Ptr();
+    Stg_Meta_Reversal *_strat = iter.Value().Ptr();
     _strat.SetStrategies(ea);
   }
   return (_result ? INIT_SUCCEEDED : INIT_FAILED);
