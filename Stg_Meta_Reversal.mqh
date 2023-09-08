@@ -9,7 +9,7 @@
 
 // User input params.
 INPUT2_GROUP("Meta Reversal strategy: main params");
-INPUT2 ENUM_STRATEGY Meta_Reversal_Strategy = STRAT_RSI;  // Strategy to reverse signals
+INPUT2 ENUM_STRATEGY Meta_Reversal_Strategy = STRAT_ATR;  // Strategy to reverse signals
 INPUT2_GROUP("Meta Reversal strategy: common params");
 INPUT2 float Meta_Reversal_LotSize = 0;                // Lot size
 INPUT2 int Meta_Reversal_SignalOpenMethod = 0;         // Signal open method
