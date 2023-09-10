@@ -94,6 +94,9 @@ class Stg_Meta_Reversal : public Strategy {
       case STRAT_AMA:
         _result &= StrategyAdd<Stg_AMA>(_tf, _magic_no, _sid);
         break;
+      case STRAT_ARROWS:
+        _result &= StrategyAdd<Stg_Arrows>(_tf, _magic_no, _sid);
+        break;
       case STRAT_ASI:
         _result &= StrategyAdd<Stg_ASI>(_tf, _magic_no, _sid);
         break;
@@ -154,6 +157,15 @@ class Stg_Meta_Reversal : public Strategy {
       case STRAT_MA:
         _result &= StrategyAdd<Stg_MA>(_tf, _magic_no, _sid);
         break;
+      case STRAT_MA_CROSS_PIVOT:
+        _result &= StrategyAdd<Stg_MA_Cross_Pivot>(_tf, _magic_no, _sid);
+        break;
+      case STRAT_MA_CROSS_SHIFT:
+        _result &= StrategyAdd<Stg_MA_Cross_Shift>(_tf, _magic_no, _sid);
+        break;
+      case STRAT_MA_CROSS_SUP_RES:
+        _result &= StrategyAdd<Stg_MA_Cross_Sup_Res>(_tf, _magic_no, _sid);
+        break;
       case STRAT_MACD:
         _result &= StrategyAdd<Stg_MACD>(_tf, _magic_no, _sid);
         break;
@@ -165,6 +177,27 @@ class Stg_Meta_Reversal : public Strategy {
         break;
       case STRAT_OBV:
         _result &= StrategyAdd<Stg_OBV>(_tf, _magic_no, _sid);
+        break;
+      case STRAT_OSCILLATOR:
+        _result &= StrategyAdd<Stg_Oscillator>(_tf, _magic_no, _sid);
+        break;
+      case STRAT_OSCILLATOR_DIVERGENCE:
+        _result &= StrategyAdd<Stg_Oscillator_Divergence>(_tf, _magic_no, _sid);
+        break;
+      case STRAT_OSCILLATOR_MULTI:
+        _result &= StrategyAdd<Stg_Oscillator_Multi>(_tf, _magic_no, _sid);
+        break;
+      case STRAT_OSCILLATOR_CROSS:
+        _result &= StrategyAdd<Stg_Oscillator_Cross>(_tf, _magic_no, _sid);
+        break;
+      case STRAT_OSCILLATOR_CROSS_SHIFT:
+        _result &= StrategyAdd<Stg_Oscillator_Cross_Shift>(_tf, _magic_no, _sid);
+        break;
+      case STRAT_OSCILLATOR_CROSS_ZERO:
+        _result &= StrategyAdd<Stg_Oscillator_Cross_Zero>(_tf, _magic_no, _sid);
+        break;
+      case STRAT_OSCILLATOR_RANGE:
+        _result &= StrategyAdd<Stg_Oscillator_Range>(_tf, _magic_no, _sid);
         break;
       case STRAT_OSMA:
         _result &= StrategyAdd<Stg_OsMA>(_tf, _magic_no, _sid);
