@@ -130,6 +130,9 @@ class Stg_Meta_Reversal : public Strategy {
       case STRAT_DEMA:
         _result &= StrategyAdd<Stg_DEMA>(_tf, _magic_no, _sid);
         break;
+      case STRAT_DPO:
+        _result &= StrategyAdd<Stg_DPO>(_tf, _magic_no, _sid);
+        break;
       case STRAT_DEMARKER:
         _result &= StrategyAdd<Stg_DeMarker>(_tf, _magic_no, _sid);
         break;
