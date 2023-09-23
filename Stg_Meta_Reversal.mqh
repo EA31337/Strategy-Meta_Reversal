@@ -166,6 +166,9 @@ class Stg_Meta_Reversal : public Strategy {
       case STRAT_MA_CROSS_SUP_RES:
         _result &= StrategyAdd<Stg_MA_Cross_Sup_Res>(_tf, _magic_no, _sid);
         break;
+      case STRAT_MA_TREND:
+        _result &= StrategyAdd<Stg_MA_Trend>(_tf, _magic_no, _sid);
+        break;
       case STRAT_MACD:
         _result &= StrategyAdd<Stg_MACD>(_tf, _magic_no, _sid);
         break;
@@ -198,6 +201,9 @@ class Stg_Meta_Reversal : public Strategy {
         break;
       case STRAT_OSCILLATOR_RANGE:
         _result &= StrategyAdd<Stg_Oscillator_Range>(_tf, _magic_no, _sid);
+        break;
+      case STRAT_OSCILLATOR_TREND:
+        _result &= StrategyAdd<Stg_Oscillator_Trend>(_tf, _magic_no, _sid);
         break;
       case STRAT_OSMA:
         _result &= StrategyAdd<Stg_OsMA>(_tf, _magic_no, _sid);
