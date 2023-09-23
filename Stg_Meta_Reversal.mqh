@@ -157,6 +157,9 @@ class Stg_Meta_Reversal : public Strategy {
       case STRAT_MA:
         _result &= StrategyAdd<Stg_MA>(_tf, _magic_no, _sid);
         break;
+      case STRAT_MA_BREAKOUT:
+        _result &= StrategyAdd<Stg_MA_Breakout>(_tf, _magic_no, _sid);
+        break;
       case STRAT_MA_CROSS_PIVOT:
         _result &= StrategyAdd<Stg_MA_Cross_Pivot>(_tf, _magic_no, _sid);
         break;
