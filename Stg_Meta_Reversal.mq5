@@ -35,9 +35,9 @@ input bool Info_On_Chart = true;          // Display info on chart.
 #include "Stg_Meta_Reversal.mqh"
 
 // Defines.
-#define ea_name "Strategy Meta_Reversal"
+#define ea_name "Strategy Meta Reversal"
 #define ea_version "2.000"
-#define ea_desc "Strategy based on EA31337 framework."
+#define ea_desc "Reversal meta strategy reverses signals of another strategy."
 #define ea_link "https://github.com/EA31337/Strategy-Meta_Reversal"
 #define ea_author "EA31337 Ltd"
 
