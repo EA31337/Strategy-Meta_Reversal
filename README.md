@@ -13,7 +13,7 @@ Reversal meta strategy reverses signals of another strategy.
 
 | Tag      | Framework | Strategies |
 |:--------:|:---------:|:----------:|
-| v2.000   | v3.000.1  | v2.000     |
+| v2.000   | v3.000.2  | v2.000     |
 
 <!-- Named links -->
 
